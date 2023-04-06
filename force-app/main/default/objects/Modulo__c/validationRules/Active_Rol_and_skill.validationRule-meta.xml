@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Rol_and_skill</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  Active__c = TRUE,
+OR(
+  ISBLANK(Rol__c),
+ISBLANK(TEXT(Skill__c)))
+)</errorConditionFormula>
+    <errorMessage>Skill and Role must be filled before activating</errorMessage>
+</ValidationRule>
