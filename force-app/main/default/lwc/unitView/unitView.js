@@ -70,8 +70,12 @@ export default class UnitView extends LightningElement {
 
     handleSubmit(event){
         event.preventDefault();
-        const fields = Object.keys(this.selectedOption).length
+        const fields = Object.keys(this.selectedOption).length;
         const amountOfQuestions = this.data.questions.length;
+        console.log(fields);
+        console.log(amountOfQuestions);
+        console.log(this.unitId);
+        console.log(this.selectedOption);
             if(fields === amountOfQuestions){
                 saveAnswers( { unitId : this.unitId, jsonAnswers : JSON.stringify(this.selectedOption) } )
                 .then(result => {
@@ -84,10 +88,11 @@ export default class UnitView extends LightningElement {
                     }, 2435);
                     this.optionResponse = result;
                     this.showToastMessage(this.optionResponse);
-
+        
                 })
                 .catch(error => {
                     this.error = error;
+                    console.log(error);
                     const toast = new ShowToastEvent({
                         title: 'Se rompio todo',
                         message: error,
@@ -102,7 +107,10 @@ export default class UnitView extends LightningElement {
                 });
                 this.dispatchEvent(toast);
             }
-    }       
+           }
+            }       
+            
+
+        
 
 
-}
