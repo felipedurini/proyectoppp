@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Apex</fullName>
+        <default>false</default>
+        <label>Apex</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning</fullName>
+        <default>false</default>
+        <label>Lightning</label>
+    </customValue>
+    <customValue>
+        <fullName>Security</fullName>
+        <default>false</default>
+        <label>Security</label>
+    </customValue>
+    <customValue>
+        <fullName>App Lifecycle</fullName>
+        <default>false</default>
+        <label>App Lifecycle</label>
+    </customValue>
+    <customValue>
+        <fullName>App Logic</fullName>
+        <default>false</default>
+        <label>App Logic</label>
+    </customValue>
+    <customValue>
+        <fullName>Database</fullName>
+        <default>false</default>
+        <label>Database</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Management</fullName>
+        <default>false</default>
+        <label>Data Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Reporting</fullName>
+        <default>false</default>
+        <label>Reporting</label>
+    </customValue>
+    <masterLabel>Skills</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

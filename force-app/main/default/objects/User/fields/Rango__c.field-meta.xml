@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rango__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Puntos__c,
+    0, &quot;SCOUT&quot;,
+    200, &quot;HIKER&quot;,
+    3000, &quot;EXPLORER&quot;,
+    9000, &quot;ADVENTURER&quot;,
+    18000, &quot;MOUNTAINEER&quot;,
+    35000, &quot;EXPEDITIONER&quot;,
+    50000, &quot;RANGER&quot;,
+    &quot;Otro valor&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rango</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
